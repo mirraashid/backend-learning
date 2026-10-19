@@ -1,0 +1,18 @@
+{
+  "name": "node-learning",
+  "version": "1.0.0",
+  "description": "Learning backend concepts",
+  "license": "ISC",
+  "author": "Mir",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.10"
+  }
+}
