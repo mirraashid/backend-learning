@@ -1,12 +1,14 @@
-import express from 'express';
-import  mongoose from "mongoose"
-import { DB_NAME } from "./constants.js";
 import connectDB from './db/index.js';
+import startServer from './app.js';
 
-const app = express();
 
-
-connectDB();
+connectDB()
+.then(() => {
+    startServer();
+})
+.catch((err) => {
+    console.error("Mongo db connection failed !!! ", err)
+})
 
 
 /*
